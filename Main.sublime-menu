@@ -10,7 +10,7 @@
         "id": "package-settings",
         "children": [
           {
-            "caption": "Spotify",
+            "caption": "Rdio",
             "children": [
               {
                 "caption": "-"
@@ -18,14 +18,14 @@
               {
                 "command": "open_file",
                 "args": {
-                  "file": "${packages}/Spotify/Spotify.sublime-settings"
+                  "file": "${packages}/Rdio/Rdio.sublime-settings"
                 },
                 "caption": "Settings – Default"
               },
               {
                 "command": "open_file",
                 "args": {
-                  "file": "${packages}/User/Spotify.sublime-settings"
+                  "file": "${packages}/User/Rdio.sublime-settings"
                 },
                 "caption": "Settings – User"
               },

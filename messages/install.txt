@@ -1,0 +1,12 @@
+Rdio for Sublime 1.0 Changelog
+
+Thanks for installing Rdio for Sublime!  
+
+Check out the settings in Preferences -> Package Settings -> Rdio for some small configuration tweaks.  
+
+When you want to search for artists or albums, prepend your searches with "artist:" or "album:".
+e.g. Typing "album: Daft Punk" in the search box, will list albums by Daft Punk.
+
+Feel free to reach out to me with any questions/bugs:
+https://github.com/smpanaro
+https://twitter.com/flat

@@ -14,7 +14,7 @@ class MusicPlayerStatusUpdater():
     def __init__(self, player):
         self.player = player
 
-        s = sublime.load_settings("Spotify.sublime-settings")
+        s = sublime.load_settings("Rdio.sublime-settings")
         self.display_duration = int(s.get("status_duration"))
         self.status_format = s.get("status_format")
 
@@ -56,7 +56,7 @@ class MusicPlayerStatusUpdater():
             self._cached_duration = self._get_min_sec_string(self._cached_duration_secs)
 
         if self._cached_duration_secs >= 29 and self._cached_duration_secs <= 31:
-            return "Spotify Advertisement"
+            return "Rdio Advertisement"
 
         return self.status_format.format(
             equalizer="".join(self.bars),

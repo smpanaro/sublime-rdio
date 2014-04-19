@@ -12,50 +12,50 @@ except: # ST3
 
 sublime3 = int(sublime.version()) >= 3000
 if sublime3:
-    from Spotify.applescript_spotify_player import AppleScriptSpotifyPlayer as SpotifyPlayer
-    from Spotify.status_updater import MusicPlayerStatusUpdater
+    from Rdio.applescript_rdio_player import AppleScriptRdioPlayer as RdioPlayer
+    from Rdio.status_updater import MusicPlayerStatusUpdater
 else:
-    from spotify_player import SpotifyPlayer
+    from rdio_player import RdioPlayer
     from status_updater import MusicPlayerStatusUpdater
 
-class SpotifyCommand(sublime_plugin.WindowCommand):
+class RdioCommand(sublime_plugin.WindowCommand):
     def __init__(self, window):
         self.window = window
-        self.player = SpotifyPlayer.Instance()
+        self.player = RdioPlayer.Instance()
         if not self.player.status_updater:
             self.player.status_updater = MusicPlayerStatusUpdater(self.player)
 
-class SpotifyPlayCommand(SpotifyCommand):
+class RdioPlayCommand(RdioCommand):
     def run(self):
         self.player.play()
 
-class SpotifyPauseCommand(SpotifyCommand):
+class RdioPauseCommand(RdioCommand):
     def run(self):
         self.player.pause()
 
-class SpotifyNextTrackCommand(SpotifyCommand):
+class RdioNextTrackCommand(RdioCommand):
     def run(self):
         self.player.next()
 
-class SpotifyPreviousTrackCommand(SpotifyCommand):
+class RdioPreviousTrackCommand(RdioCommand):
     def run(self):
         self.player.previous()
 
-class SpotifyToggleShuffleCommand(SpotifyCommand):
+class RdioToggleShuffleCommand(RdioCommand):
     def run(self):
         self.player.toggle_shuffle()
 
-class SpotifyToggleRepeatCommand(SpotifyCommand):
+class RdioToggleRepeatCommand(RdioCommand):
     def run(self):
         self.player.toggle_repeat()
 
-class SpotifyNowPlaying(SpotifyCommand):
+class RdioNowPlaying(RdioCommand):
     def run(self):
         self.player.show_status_message()
 
-class SpotifySearchCommand(SpotifyCommand):
+class RdioSearchCommand(RdioCommand):
     def run(self):
-        self.window.show_input_panel("Search Spotify", "", self.do_search, None, None)
+        self.window.show_input_panel("Search Rdio", "", self.do_search, None, None)
 
     def do_search(self, search):
         category = "track" #default
@@ -69,7 +69,7 @@ class SpotifySearchCommand(SpotifyCommand):
 
         query = quote_plus(query)
 
-        url = "http://ws.spotify.com/search/1/{category}.json?q={query}".format(category=category, query=query)
+        url = "http://ws.rdio.com/search/1/{category}.json?q={query}".format(category=category, query=query)
         url_thread = ThreadedRequest(url, self)
         url_thread.setDaemon(True)
         url_thread.start()
@@ -81,7 +81,7 @@ class SpotifySearchCommand(SpotifyCommand):
 
         res = json.loads(resp.decode('utf-8'))
         if res["info"]["num_results"] == 0:
-            self.window.show_input_panel("Search Spotify", "No results found, try again?", self.do_search, None, None)
+            self.window.show_input_panel("Search Rdio", "No results found, try again?", self.do_search, None, None)
             return
 
         rows = []

@@ -4,13 +4,13 @@ import sublime
 from subprocess import Popen, PIPE
 
 try:
-    from Spotify.singleton import Singleton
+    from Rdio.singleton import Singleton
 except:
     from singleton import Singleton
 
 # Wrap player interactions to compensate for different naming styles and platforms.
 @Singleton
-class AppleScriptSpotifyPlayer():
+class AppleScriptRdioPlayer():
     def __init__(self):
         if sys.platform == "win32":
             raise NotImplementedError("Sorry, there's no Windows support yet.")
@@ -21,14 +21,14 @@ class AppleScriptSpotifyPlayer():
         self.status_updater = None
 
     def is_running(self):
-        res = self._execute_command('get running of application "Spotify"')
+        res = self._execute_command('get running of application "Rdio"')
         return res == "true"
 
     def show_status_message(self):
         self.status_updater.run()
 
     def _get_state(self):
-        return self._execute_command('tell application "Spotify" to player state')
+        return self._execute_command('tell application "Rdio" to player state')
 
     def is_playing(self):
         return self._get_state() == "playing"
@@ -41,72 +41,66 @@ class AppleScriptSpotifyPlayer():
 
     # Current Track information
     def get_artist(self):
-        return self._execute_command('tell application "Spotify" to artist of current track')
+        return self._execute_command('tell application "Rdio" to artist of current track')
 
     def get_album(self):
-        return self._execute_command('tell application "Spotify" to album of current track')
+        return self._execute_command('tell application "Rdio" to album of current track')
 
     def get_song(self):
-        return self._execute_command('tell application "Spotify" to name of current track')
+        return self._execute_command('tell application "Rdio" to name of current track')
 
     def get_position(self):
-        numstr = self._execute_command('tell application "Spotify" to player position')
-        return int(float(numstr))
+        numstr = self._execute_command('tell application "Rdio" to player position')
+        return int(float(numstr)) #why cast to int?
 
     def get_duration(self):
-        numstr = self._execute_command('tell application "Spotify" to duration of current track')
+        numstr = self._execute_command('tell application "Rdio" to duration of current track')
         return int(float(numstr))
 
     # Actions
     def play_pause(self):
-        self._execute_command('tell application "Spotify" to playpause')
+        self._execute_command('tell application "Rdio" to playpause')
 
     def play_track(self, track_url, attempts=0):
         # Wait for the application to launch.
         if not self.is_running():
             if attempts > 10: return
-            self._execute_command('tell application "Spotify" to activate')
+            self._execute_command('tell application "Rdio" to launch')
             sublime.set_timeout(lambda: self.play_track(track_url, attempts+1), 1000)
         else:
-            self._execute_command('tell application "Spotify" to play track "{}"'.format(track_url))
+            self._execute_command('tell application "Rdio" to play track "{}"'.format(track_url))
             self.show_status_message()
 
     def play(self, attempts=0):
         if not self.is_running():
             if attempts > 10: return
-            self._execute_command('tell application "Spotify" to activate')
+            self._execute_command('tell application "Rdio" to launch')
             sublime.set_timeout(lambda: self.play(attempts+1), 1000)
         else:
-            self._execute_command('tell application "Spotify" to play')
+            self._execute_command('tell application "Rdio" to play')
             self.show_status_message()
 
     def pause(self):
-        self._execute_command('tell application "Spotify" to pause')
+        self._execute_command('tell application "Rdio" to pause')
 
     def next(self):
-        self._execute_command('tell application "Spotify" to next track')
+        self._execute_command('tell application "Rdio" to next track')
         self.show_status_message()
 
     def previous(self):
         # Call it twice - once to get back to the beginning
         # of this song and once to go back to the next.
-        self._execute_command('tell application "Spotify" to previous track')
-        self._execute_command('tell application "Spotify" to previous track')
+        # Not sure how well this works for Rdio.
+        self._execute_command('tell application "Rdio" to previous track')
+        self._execute_command('tell application "Rdio" to previous track')
         self.show_status_message()
 
     def toggle_shuffle(self):
-        if self._execute_command('tell application "Spotify" to shuffling enabled') == "true":
-            if self._execute_command('tell application "Spotify" to shuffling') == "false":
-                self._execute_command('tell application "Spotify" to set shuffling to true')
+        if self._execute_command('tell application "Rdio" to shuffling enabled') == "true":
+            if self._execute_command('tell application "Rdio" to shuffling') == "false":
+                self._execute_command('tell application "Rdio" to set shuffling to true')
             else:
-                self._execute_command('tell application "Spotify" to set shuffling to false')
-
-    def toggle_repeat(self):
-        if self._execute_command('tell application "Spotify" to repeating enabled'):
-            if self._execute_command('tell application "Spotify" to repeating') == "false":
-                self._execute_command('tell application "Spotify" to set repeating to true')
-            else:
-                self._execute_command('tell application "Spotify" to set repeating to false')
+                self._execute_command('tell application "Rdio" to set shuffling to false')
 
     def _execute_command(self, cmd):
         stdout = ""

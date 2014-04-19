@@ -2,7 +2,7 @@
 	// Restart sublime if you don't see your changes!
 
 	// Time in seconds to display current track information in the status bar.
-	// Values < 0 will show the status any time Spotify is open.
+	// Values < 0 will show the status any time Rdio is open.
 	// 0 will disable this feature.
 	// Values > 0 will show the status for that many seconds after
 	// certain events (e.g. play, search, next, previous, now playing)
