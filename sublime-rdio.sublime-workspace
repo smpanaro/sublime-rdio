@@ -1,0 +1,1092 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"backup_dir"
+			],
+			[
+				"pass",
+				"password_path"
+			],
+			[
+				"committe",
+				"committer_email"
+			],
+			[
+				"comm",
+				"committer_name"
+			],
+			[
+				"commi",
+				"committer_email"
+			],
+			[
+				"get",
+				"get_deleted_notes_string  (function)"
+			],
+			[
+				"dele",
+				"deleted_notes"
+			],
+			[
+				"Re",
+				"RestoreManager  (class)"
+			],
+			[
+				"rep",
+				"repo_mgr"
+			],
+			[
+				"def",
+				"defs	Method"
+			],
+			[
+				"tre",
+				"treeid"
+			],
+			[
+				"ref",
+				"ref_to_update"
+			],
+			[
+				"pare",
+				"parent_commits"
+			],
+			[
+				"GIT",
+				"GIT_STATUS_WT_MODIFIED"
+			],
+			[
+				"key_fil",
+				"key_file_path"
+			],
+			[
+				"commiter",
+				"committer_email"
+			],
+			[
+				"commit",
+				"committer_name"
+			],
+			[
+				"key",
+				"key_file_path"
+			],
+			[
+				"GIT_",
+				"GIT_STATUS_WT_MODIFIED"
+			],
+			[
+				"GIT_ST",
+				"GIT_STATUS_WT_NEW"
+			],
+			[
+				"pycl",
+				"pycloudnotes  (module)"
+			],
+			[
+				"note",
+				"note_id"
+			],
+			[
+				"not",
+				"note_mgr"
+			],
+			[
+				"dont",
+				"dontcares"
+			],
+			[
+				"print",
+				"print_vec"
+			],
+			[
+				"mint",
+				"minterms"
+			],
+			[
+				"time",
+				"time_tup"
+			],
+			[
+				"message",
+				"Message-Id"
+			],
+			[
+				"x-",
+				"X-Universally-Unique-Identifier"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"minter",
+				"minterm_str"
+			],
+			[
+				"chea",
+				"cheapest_combo"
+			],
+			[
+				"che",
+				"cheapest_combo"
+			],
+			[
+				"cheapest",
+				"cheapest_combo"
+			],
+			[
+				"combo",
+				"combo_to_cost"
+			],
+			[
+				"cov",
+				"covers_all_remaining_mts"
+			],
+			[
+				"all",
+				"all_mts"
+			],
+			[
+				"rema",
+				"remaining_mt"
+			],
+			[
+				"stri",
+				"stripped_combos"
+			],
+			[
+				"rem",
+				"remaining_mts"
+			],
+			[
+				"remain",
+				"remaining_mts"
+			],
+			[
+				"remi",
+				"remaining_pis"
+			],
+			[
+				"essen",
+				"essential_pis"
+			],
+			[
+				"cover",
+				"covered_minterms"
+			],
+			[
+				"esse",
+				"eseential_pis"
+			],
+			[
+				"numb",
+				"numbers"
+			],
+			[
+				"num",
+				"number"
+			],
+			[
+				"next",
+				"next_imp"
+			],
+			[
+				"diff",
+				"differences"
+			],
+			[
+				"possi",
+				"possible_nums"
+			],
+			[
+				"minterm",
+				"minterm_number"
+			],
+			[
+				"sele",
+				"selectedLine"
+			],
+			[
+				"transit",
+				"transitApi"
+			],
+			[
+				"transi",
+				"transitApi"
+			],
+			[
+				"lineToCoo",
+				"lineToCoordLists"
+			],
+			[
+				"trans",
+				"transitApi"
+			],
+			[
+				"titl",
+				"titleText"
+			],
+			[
+				"remov",
+				"removeAttribute"
+			],
+			[
+				"match",
+				"matchingElems"
+			],
+			[
+				"infoW",
+				"infoWindowContent"
+			],
+			[
+				"info",
+				"infoWindow"
+			],
+			[
+				"sch",
+				"scheduleFetchedAt"
+			],
+			[
+				"schedule",
+				"scheduleFetchedAt  (variable)"
+			],
+			[
+				"open",
+				"openUserInfoWindow"
+			],
+			[
+				"clos",
+				"closest_dist"
+			],
+			[
+				"remove",
+				"removeChild  (function)"
+			],
+			[
+				"getEle",
+				"getFirstElementByClass"
+			],
+			[
+				"getEleme",
+				"getFirstElementByClass"
+			],
+			[
+				"halfo",
+				"halfOfOrangeLineStops"
+			],
+			[
+				"half",
+				"halfOfBlueLineStops"
+			],
+			[
+				"dest",
+				"destinationName"
+			],
+			[
+				"destin",
+				"destinationName"
+			],
+			[
+				"remo",
+				"removeChild  (function)"
+			],
+			[
+				"arriv",
+				"arrivalTimes"
+			],
+			[
+				"arri",
+				"arrivalTimes"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"stati",
+				"stationName"
+			],
+			[
+				"stat",
+				"stationName"
+			],
+			[
+				"display",
+				"displayTStations"
+			],
+			[
+				"rodeo",
+				"rodeoObj"
+			],
+			[
+				"r",
+				"responseText  (variable)"
+			],
+			[
+				"res",
+				"responseText"
+			],
+			[
+				"line",
+				"lineName"
+			],
+			[
+				"statio",
+				"station_coords"
+			],
+			[
+				"sub",
+				"subwayBorderPath"
+			],
+			[
+				"disp",
+				"displayAllLines"
+			],
+			[
+				"lin",
+				"lineName"
+			],
+			[
+				"sorted",
+				"sorted_seg"
+			],
+			[
+				"sort",
+				"sorted_seg"
+			],
+			[
+				"new",
+				"newlines"
+			],
+			[
+				"print_",
+				"print_polyline_coords"
+			],
+			[
+				"sta",
+				"stations_path"
+			],
+			[
+				"lines",
+				"lines_path"
+			],
+			[
+				"login",
+				"login_resp"
+			],
+			[
+				"get_h",
+				"get_housing_groups_report  (function)"
+			],
+			[
+				"mrg",
+				"margin-left"
+			],
+			[
+				"onm",
+				"onmouseover	Attr"
+			],
+			[
+				"spri",
+				"spriteSheet"
+			],
+			[
+				"spriteShe",
+				"spriteSheetPath"
+			],
+			[
+				"sc",
+				"scaleFactor  (variable)"
+			],
+			[
+				"scal",
+				"scaledHeight  (variable)"
+			],
+			[
+				"heig",
+				"heightRatio"
+			],
+			[
+				"wid",
+				"widthRatio"
+			],
+			[
+				"spr",
+				"spriteSheet"
+			],
+			[
+				"date",
+				"datetime  (class)"
+			],
+			[
+				"movi",
+				"movie_and_date"
+			],
+			[
+				"movie",
+				"movie_line"
+			],
+			[
+				"add",
+				"appendChild  (function)"
+			],
+			[
+				"has",
+				"hasChildNodes  (function)"
+			],
+			[
+				"bio",
+				"bio_template"
+			],
+			[
+				"confi",
+				"configFile"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"dat",
+				"date_to_movie"
+			],
+			[
+				"tag",
+				"tagless"
+			],
+			[
+				"debug",
+				"Debug"
+			],
+			[
+				"s",
+				"sans-serif  (value)"
+			],
+			[
+				"over",
+				"overflow-y:   (property)"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"backgrounc",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"padding-t",
+				"padding-top:   (property)"
+			],
+			[
+				"digit",
+				"digitalWrite	Arduino digitalWrite"
+			],
+			[
+				"Seria",
+				"SerialCommunicator"
+			],
+			[
+				"readin",
+				"reading_delay_ms"
+			],
+			[
+				"ur",
+				"OwnerUriString"
+			],
+			[
+				"Ur",
+				"EmbedUriString"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"pau",
+				"Spotify: Pause"
+			],
+			[
+				"pla",
+				"Spotify: Play"
+			],
+			[
+				"paus",
+				"Spotify: Pause"
+			],
+			[
+				"now",
+				"Spotify: Now Playing"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"package lis",
+				"Package Control: List Packages"
+			],
+			[
+				"gith",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"handle",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"sublime linter sett",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"sublimel",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"prev",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"githu",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"previ",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"colo",
+				"Color picker"
+			],
+			[
+				"col",
+				"Color picker"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Color picker"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 655.0
+	},
+	"console":
+	{
+		"height": 121.0,
+		"history":
+		[
+			"help",
+			"import pyObjC",
+			"import .sublime_spotify",
+			"import spotify_player",
+			"import SpotifyPlayer",
+			"which"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/User/Spotify.sublime-settings",
+		"/Users/Steve/Documents/Projects/pycloudnotes/_pycl",
+		"/Users/Steve/Documents/Projects/pycloudnotes/_pycloudnotes",
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Steve/Documents/College/2013-2014/PHY41/Labs/Lab9/Lab9Notes",
+		"/Users/Steve/Documents/Projects/pycloudnotes/pycloudnotes/backup_manager.py",
+		"/Users/Steve/Documents/Projects/pycloudnotes/pycloudnotes/icloud.py",
+		"/Users/Steve/Documents/Projects/pycloudnotes/main.py",
+		"/Users/Steve/Documents/Projects/pycloudnotes/test.py",
+		"/Users/Steve/Desktop/test.cpp",
+		"/Users/Steve/Documents/Projects/pycloudnotes/pycloudbackupstest/EB9F03D8-7733-4FE2-916F-C319F2B97B89",
+		"/Users/Steve/Documents/Projects/pycloudnotes/pycloudbackupstest/E006452D-9C79-45DB-A1C6-CA2519B5CA16",
+		"/Users/Steve/Documents/Projects/pycloudnotes/.gitignore",
+		"/Users/Steve/Documents/College/2013-2014/PHY41/Labs/Lab8/Lab8Notes",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/Notes/2014.04.01",
+		"/Users/Steve/Documents/Projects/pycloudnotes/lib/pycloudnotes/repo.py",
+		"/Users/Steve/Documents/Projects/pycloudnotes/lib/pycloudnotes/icloud.py",
+		"/Users/Steve/Documents/Projects/pycloudnotes/lib/main.py",
+		"/Users/Steve/Documents/Projects/pycloudnotes/lib/import pygit2",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/2048-gamecenter/README.md",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/views/home.handlebars",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/client/js/remote_leaderboard_manager.js",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/README.md",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/static/css/home.css",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/server.js",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/client/js/application.js",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/views/layouts/main.handlebars",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/views/home.css",
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/client/index.html",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/client/js/game_manager.js",
+		"/Users/Steve/Desktop/lol.html",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/Procfile",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/package.json",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/server/.gitignore",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/2048-gamecenter/js/html_actuator.js",
+		"/Users/Steve/Documents/College/2013-2014/PHY41/Labs/Lab7/Lab7Notes",
+		"/Users/Steve/Documents/Projects/datpiffapi/README.md",
+		"/Users/Steve/Documents/Projects/datpiffapi/dp.py",
+		"/Users/Steve/Documents/College/2013-2014/EE26/Projects/Project1/README.md",
+		"/Users/Steve/Documents/College/2013-2014/EE26/Projects/Project1/qm.py",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/Notes/2014.03.25",
+		"/Users/Steve/Desktop/gotochromecast",
+		"/Users/Steve/Desktop/gotosteve",
+		"/Volumes/More Storage/Snow/Cortina d'Ampezzo/GoProNotes",
+		"/Users/Steve/Documents/Projects/MACUtils/gotosteve",
+		"/Users/Steve/Documents/College/2013-2014/PHY41/Labs/Lab5/Lab5Notes",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/comp20-s2014-team23/README.md",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/Notes/2014.03.11 - Data Persistence",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/transit-extras.js",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/untitled",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/README.md",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/index.css",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/index.html",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/data_gen/convert-mbta-data.py",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/transit.js",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/duckhunt/README.md",
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/transit-constants.js",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/stations.csv",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/Notes/2014.03.04 - XHR",
+		"/tmp/subl stdin TaS5Sj.txt",
+		"/tmp/subl stdin fJhSdD.txt",
+		"/tmp/subl stdin TcehFP.txt",
+		"/tmp/subl stdin Eg0TER.txt",
+		"/tmp/subl stdin mFXCtt.txt",
+		"/tmp/subl stdin JP0zes.txt",
+		"/tmp/subl stdin g2V6GA.txt",
+		"/tmp/subl stdin HJ7vQ9.txt",
+		"/tmp/subl stdin FVbGeB.txt",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/privaterepo/transit/convert-mbta-data.py",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/Notes/2014.03.06 - Event Handling",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/mbta-resources/t_lines.json",
+		"/tmp/subl stdin oGEQcr.txt",
+		"/tmp/subl stdin yKApwf.txt",
+		"/tmp/subl stdin FpWmao.txt",
+		"/tmp/subl stdin r7jGdI.txt",
+		"/tmp/subl stdin 4xj4yD.txt",
+		"/tmp/subl stdin JBH78A.txt",
+		"/tmp/subl stdin sI90t2.txt",
+		"/tmp/subl stdin 3m5VT2.txt",
+		"/tmp/subl stdin IHuCEu.txt",
+		"/tmp/subl stdin aRRoNN.txt",
+		"/tmp/subl stdin B2F5Au.txt",
+		"/tmp/subl stdin 5cBc7C.txt",
+		"/tmp/subl stdin vL3JJT.txt",
+		"/tmp/subl stdin EsBtOR.txt",
+		"/tmp/subl stdin YuAM9J.txt",
+		"/tmp/subl stdin ri36c0.txt",
+		"/tmp/subl stdin A8EUTt.txt",
+		"/tmp/subl stdin s45cEj.txt",
+		"/tmp/subl stdin opHsSo.txt",
+		"/tmp/subl stdin UgPKRV.txt",
+		"/tmp/subl stdin K45O9s.txt",
+		"/tmp/subl stdin ipIMQG.txt",
+		"/tmp/subl stdin DxZcMn.txt",
+		"/tmp/subl stdin eawmsG.txt",
+		"/tmp/subl stdin XifgQF.txt",
+		"/tmp/subl stdin fmd1dE.txt",
+		"/tmp/subl stdin OTSHyv.txt",
+		"/tmp/subl stdin QbAbqY.txt",
+		"/tmp/subl stdin 5zQ4oO.txt",
+		"/tmp/subl stdin GjXPiq.txt",
+		"/tmp/subl stdin V2aR8U.txt",
+		"/tmp/subl stdin 7hEdjr.txt",
+		"/tmp/subl stdin CZ7Ha8.txt",
+		"/tmp/subl stdin rqhAtY.txt",
+		"/tmp/subl stdin 5dIZsi.txt",
+		"/tmp/subl stdin 6p4kXd.txt",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/mbta-resources/t_linesss.json",
+		"/Users/Steve/Documents/College/2013-2014/COMP20/mbta-resources/test.json",
+		"/Users/Steve/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/Steve/Documents/College/2013-2014/EE31/bandpasscalc.py",
+		"/Users/Steve/Documents/Projects/tuftswebcenter/webcenter/webcenter.py",
+		"/Users/Steve/Documents/Projects/tuftswebcenter/README.rst",
+		"/Users/Steve/Documents/College/2013-2014/EE31/swarmbot/README.md",
+		"/Users/Steve/Documents/Projects/personalsite/index_mobile.css",
+		"/Users/Steve/Documents/College/2013-2014/PHY41/Labs/Lab4/Lab4Notes",
+		"/Users/Steve/Documents/College/2013-2014/PHY41/Labs/Lab3/Lab3Notes",
+		"/Users/Steve/Documents/Projects/personalsite/main_mobile.css",
+		"/Users/Steve/Documents/Projects/system-audio-cast/stop.sh",
+		"/Users/Steve/Documents/Projects/system-audio-cast/icecast.xml",
+		"/Users/Steve/Documents/Projects/system-audio-cast/darkice.cfg",
+		"/Users/Steve/Documents/Projects/system-audio-cast/nohup.out",
+		"/Users/Steve/Desktop/HOTDOGSEAGULL/static/chromecast.js",
+		"/Users/Steve/Documents/Projects/system-audio-cast/run.sh"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			".",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"x",
+			"cls",
+			"main",
+			"cmds_string",
+			"repo_mgr",
+			"username",
+			"email",
+			"commiter_email",
+			"commiter_name",
+			"\"n/a\"",
+			"\"pycloudnotes app\"",
+			"exists",
+			", self.path)",
+			"abs_path",
+			"arg",
+			"BackupRepoManager",
+			"parent_commits",
+			"...",
+			"num_added",
+			">>> ",
+			"full_path",
+			"relative_path",
+			"all_note_versions",
+			"uuid",
+			"msg_id",
+			"uuid",
+			"_time_from_rfc2822",
+			"MLS",
+			"remove",
+			"connectImap",
+			"configFile",
+			"username",
+			"hostname",
+			"debug",
+			"scoreCollection",
+			";",
+			"var",
+			"this.over",
+			"storage",
+			"dp_hash",
+			"album_hash",
+			"output_path",
+			"location",
+			"'",
+			"rating",
+			"'",
+			"u'",
+			"'",
+			"2908820",
+			"quin",
+			"num_ones",
+			"one",
+			"num_zer",
+			"print",
+			"num_astr",
+			"minterms",
+			"self.minterms",
+			"__merge",
+			"cubes",
+			"sort",
+			"can_combine",
+			"__numbers_are_powers_of_2",
+			"__is_power_of_2",
+			"__create_groups",
+			"__",
+			"--",
+			"print",
+			"diff2",
+			"diff1",
+			"groups",
+			"pi_num",
+			"map",
+			"rodeo",
+			"getUpcoming",
+			"schedule",
+			"scheduleFetchedAt",
+			"line",
+			"Line",
+			"line",
+			"Line",
+			"line",
+			" ",
+			"timeTemplate",
+			"node",
+			"infoWindowTimeout",
+			"//",
+			"console.l",
+			"displayUser",
+			"marker",
+			"State",
+			"Sullivan",
+			"sec",
+			"Tuffs",
+			"trip",
+			"i",
+			"Things",
+			"i",
+			"tripNum",
+			"console.",
+			"Down",
+			"North",
+			"030437526429083",
+			"06183707223056",
+			"026376230900027",
+			"030314955914363",
+			"34757795399689",
+			"056608433376738",
+			"101394858155302",
+			"34887727431294",
+			"096164761849835",
+			"348960933708398",
+			"097112150182724",
+			"348764327881135",
+			"097312972165085",
+			"34757795399689",
+			"101394858155302",
+			"396121027760387",
+			"71.142077311917035",
+			"097312972165085",
+			"'-71.101394858155302', '42.34757795399689'",
+			"42.396121027760387,-71.142077311917035",
+			"['-71.101394858155302', '42.34757795399689']",
+			"42.396121027760387,-71.142077311917035",
+			"396161588682638",
+			"396184478594414",
+			"139312924428012",
+			"139546973146466",
+			"142077311917035"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"'",
+			"\"",
+			"    ",
+			"\"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.duinostat":
+	{
+		"height": 230.0
+	},
+	"output.exec":
+	{
+		"height": 436.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_log":
+	{
+		"height": 98.0
+	},
+	"project": "sublime-rdio.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"chromecast",
+				"chromecast.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
