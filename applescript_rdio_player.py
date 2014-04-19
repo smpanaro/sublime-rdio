@@ -2,6 +2,7 @@ import sys
 import os
 import sublime
 from subprocess import Popen, PIPE
+from decimal import Decimal
 
 try:
     from Rdio.singleton import Singleton
@@ -50,8 +51,13 @@ class AppleScriptRdioPlayer():
         return self._execute_command('tell application "Rdio" to name of current track')
 
     def get_position(self):
+        """ Return current position in seconds. """
         numstr = self._execute_command('tell application "Rdio" to player position')
-        return int(float(numstr)) #why cast to int?
+        # Rdio returns position as a percent of the total durantion.
+        percent = float(numstr)
+        duration = self.get_duration()
+        decimalSeconds = Decimal((percent/100.0) * duration)
+        return round(decimalSeconds)
 
     def get_duration(self):
         numstr = self._execute_command('tell application "Rdio" to duration of current track')
@@ -90,17 +96,16 @@ class AppleScriptRdioPlayer():
     def previous(self):
         # Call it twice - once to get back to the beginning
         # of this song and once to go back to the next.
-        # Not sure how well this works for Rdio.
+        # This works poorly for Rdio. TODO: fix it.
         self._execute_command('tell application "Rdio" to previous track')
         self._execute_command('tell application "Rdio" to previous track')
         self.show_status_message()
 
     def toggle_shuffle(self):
-        if self._execute_command('tell application "Rdio" to shuffling enabled') == "true":
-            if self._execute_command('tell application "Rdio" to shuffling') == "false":
-                self._execute_command('tell application "Rdio" to set shuffling to true')
-            else:
-                self._execute_command('tell application "Rdio" to set shuffling to false')
+        if self._execute_command('tell application "Rdio" to shuffle') == "true":
+            self._execute_command('tell application "Rdio" to set shuffle to false')
+        else:
+            self._execute_command('tell application "Rdio" to set shuffle to true')
 
     def _execute_command(self, cmd):
         stdout = ""
