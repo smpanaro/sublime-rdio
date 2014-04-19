@@ -45,10 +45,6 @@ class RdioToggleShuffleCommand(RdioCommand):
     def run(self):
         self.player.toggle_shuffle()
 
-class RdioToggleRepeatCommand(RdioCommand):
-    def run(self):
-        self.player.toggle_repeat()
-
 class RdioNowPlaying(RdioCommand):
     def run(self):
         self.player.show_status_message()

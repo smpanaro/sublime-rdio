@@ -25,7 +25,7 @@ Commands include:
 * Play/Pause
 * Next/Previous
 * Search
-* Repeat/Shuffle
+* Shuffle
 * Now Playing
 
 Settings can be found in `Sublime Text -> Preferences -> Package Settings -> Rdio`. 

@@ -20,10 +20,6 @@
     "command": "rdio_toggle_shuffle"
   },
   {
-    "caption": "Rdio: Toggle Repeat",
-    "command": "rdio_toggle_repeat"
-  },
-  {
     "caption": "Rdio: Search",
     "command": "rdio_search"
   },
