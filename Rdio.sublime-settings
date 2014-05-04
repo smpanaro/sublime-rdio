@@ -12,6 +12,11 @@
 	// icon, song, artist, album, time, duration, equalizer
 	,"status_format":"{icon} - {song} - {artist} - {album} - {time}/{duration}"
 
+	// Number of milliseconds to wait in between status message updates.
+	// Higher numbers will likely lower CPU usage, but may cause the current track
+	// position to be inaccurate.
+	,"status_update_period":400
+
 	// In order to search for songs from Sublime, you need a Rdio API key and secret.
 	// Register for a developer account (separate from your regular Rdio account) at http://rdio.mashery.com/member/register.
 	// Next sign in at https://secure.mashery.com/login/rdio.mashery.com/ and Create a New Application.

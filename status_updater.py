@@ -18,12 +18,12 @@ class MusicPlayerStatusUpdater():
         self.display_duration = int(s.get("status_duration"))
         self.status_format = s.get("status_format")
 
-        self._cached_song = None
-        self._cached_artist = None
-        self._cached_album = None
-        self._cached_duration = None
+        self.current_song = None
+        self.current_artist = None
+        self.current_album = None
+        self.current_duration = None
 
-        self._update_delay = 400 # Udpate every n milliseconds.
+        self._update_delay = int(s.get("status_update_period")) # Udpate every n milliseconds.
         self._cycles_left = self.display_duration * 1000 // self._update_delay
 
         self.bars = ["▁","▂","▄","▅"]
@@ -44,28 +44,21 @@ class MusicPlayerStatusUpdater():
         else:
             icon = "∣∣"
 
-        # Simple caching. Relies on the odds of two consecutive
-        # songs having the same title being very low.
-        # Should limit scripting calls.
-        curr_song = self.player.get_song()
-        if self._cached_song != curr_song:
-            self._cached_song = curr_song
-            self._cached_artist = self.player.get_artist()
-            self._cached_album = self.player.get_album()
-            self._cached_duration_secs = self.player.get_duration()
-            self._cached_duration = self._get_min_sec_string(self._cached_duration_secs)
-
-        if self._cached_duration_secs >= 29 and self._cached_duration_secs <= 31:
-            return "Rdio Advertisement"
+        current_song_info = self.player.get_current_track()
+        self.current_song = current_song_info.get("song","")
+        self.current_artist = current_song_info.get("artist","")
+        self.current_album = current_song_info.get("album","")
+        self.current_duration_secs = current_song_info.get("duration","")
+        self.current_position_secs = current_song_info.get("position","")
 
         return self.status_format.format(
             equalizer="".join(self.bars),
             icon=icon,
-            time=self._get_min_sec_string(self.player.get_position()),
-            duration=self._cached_duration,
-            song=self._cached_song,
-            artist=self._cached_artist,
-            album=self._cached_album)
+            time=self._get_min_sec_string(self.current_position_secs),
+            duration=self._get_min_sec_string(self.current_duration_secs),
+            song=self.current_song,
+            artist=self.current_artist,
+            album=self.current_album)
 
     def run(self):
         if not self._is_displaying:

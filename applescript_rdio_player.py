@@ -53,12 +53,34 @@ class AppleScriptRdioPlayer():
     def get_song(self):
         return self._execute_command('tell application "Rdio" to name of current track')
 
+    def get_current_track(self):
+        """
+        Return an dict with keys "artist","album","duration","song","position" for the currently playing song.
+        All with only one shell command.
+        """
+        result_str = self._execute_command('tell application "Rdio" to get {duration,artist,album,name} of current track & player position')
+        try:
+            duration, artist, album, name, position = result_str.split(", ")
+            duration = int(float(duration))
+            position = self._convert_position(position, duration)
+        except ValueError:
+            # If there's a comma in the any of the fields, there's no way to differentiate the fields
+            # and a value error is thrown. In this case, just get them piece by piece.
+            duration = self.get_duration()
+            artist = self.get_artist()
+            name = self.get_song()
+            album = self.get_album()
+            position = self.get_position()
+        return {"duration":duration, "artist":artist, "album":album, "song":name, "position":position}
+
     def get_position(self):
         """ Return current position in seconds. """
         numstr = self._execute_command('tell application "Rdio" to player position')
+        return self._convert_position(numstr, self.get_duration())
+
+    def _convert_position(self, numstr, duration):
         # Rdio returns position as a percent of the total durantion.
         percent = float(numstr)
-        duration = self.get_duration()
         decimalSeconds = Decimal((percent/100.0) * duration)
         if math.isnan(decimalSeconds): return 0
         return round(decimalSeconds)
