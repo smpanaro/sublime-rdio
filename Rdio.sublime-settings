@@ -1,5 +1,5 @@
 {
-	// Restart sublime if you don't see your changes!
+	// Restart Sublime if you don't see your changes!
 
 	// Time in seconds to display current track information in the status bar.
 	// Values < 0 will show the status any time Rdio is open.
@@ -11,4 +11,16 @@
 	// Customize the status message. Possible values are:
 	// icon, song, artist, album, time, duration, equalizer
 	,"status_format":"{icon} - {song} - {artist} - {album} - {time}/{duration}"
+
+	// In order to search for songs from Sublime, you need a Rdio API key and secret.
+	// Register for a developer account (separate from your regular Rdio account) at http://rdio.mashery.com/member/register.
+	// Next sign in at https://secure.mashery.com/login/rdio.mashery.com/ and Create a New Application.
+	// Name it whatever you want and make sure "Issue a new key for rdio API"
+	// is checked. Now navigate to the "Keys" tab and copy the "Key" and "Shared Secret" below.
+	,"rdio_api_key":""
+	,"rdio_api_secret":""
+
+	// Suggestions are displayed next to search text and can be used to quickly
+	// play a track or see artist/album options. To disable them, change this setting to false.
+	,"enable_search_suggestions":true
 }

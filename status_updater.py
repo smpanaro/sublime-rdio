@@ -85,4 +85,5 @@ class MusicPlayerStatusUpdater():
             sublime.status_message(self._get_message())
             set_timeout_async(lambda: self._run(), self._update_delay)
         else:
+            sublime.status_message("")
             self._is_displaying = False

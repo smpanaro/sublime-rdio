@@ -29,3 +29,8 @@ Commands include:
 * Now Playing
 
 Settings can be found in `Sublime Text -> Preferences -> Package Settings -> Rdio`. 
+
+Todo
+----
+- Search suggestions
+- Fix status display when not playing

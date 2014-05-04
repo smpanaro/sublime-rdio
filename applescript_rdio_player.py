@@ -3,6 +3,7 @@ import os
 import sublime
 from subprocess import Popen, PIPE
 from decimal import Decimal
+import math
 
 try:
     from Rdio.singleton import Singleton
@@ -35,7 +36,9 @@ class AppleScriptRdioPlayer():
         return self._get_state() == "playing"
 
     def is_stopped(self):
-        return self._get_state() == "stopped"
+        # _get_state() never returns "stopped", just "paused", even when no music
+        # is playing and nothing is queued.
+        return self.get_artist() == ""
 
     def is_paused(self):
         return self._get_state() == "paused"
@@ -57,6 +60,7 @@ class AppleScriptRdioPlayer():
         percent = float(numstr)
         duration = self.get_duration()
         decimalSeconds = Decimal((percent/100.0) * duration)
+        if math.isnan(decimalSeconds): return 0
         return round(decimalSeconds)
 
     def get_duration(self):
@@ -74,7 +78,7 @@ class AppleScriptRdioPlayer():
             self._execute_command('tell application "Rdio" to launch')
             sublime.set_timeout(lambda: self.play_track(track_url, attempts+1), 1000)
         else:
-            self._execute_command('tell application "Rdio" to play track "{}"'.format(track_url))
+            self._execute_command('tell application "Rdio" to play source "{}"'.format(track_url))
             self.show_status_message()
 
     def play(self, attempts=0):
