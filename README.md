@@ -1,36 +1,51 @@
 Rdio for Sublime
 ===============
 
-Control Rdio from the command palette.
+- Control Rdio from the command palette. 
+- Display Now Playing info in the status bar. 
+- [Search](#search) for a new song or album from within Sublime.  
 
 ![screenshot](screenshot.png)
 
-Requirements
-------------
+## Requirements
 * OS X
-* Rdio
-* Sublime Text 2 or 3
+* Rdio Desktop App
+* Sublime Text 3
 
-Installation
--------
-**The easy way**: Install [Package Control](https://sublime.wbond.net/installation). Bring up the Command Pallete. Select "Package Control: Install Package", and select Rdio after the list appears.
+## Installation
+Clone this repository into your Sublime Text 3 packages folder (probably `~/Library/Application Support/Sublime Text 3/Packages/Rdio/`) and restart Sublime.
 
-**The other way**: Clone this repository to `~/Library/Application Support/Sublime Text 2/Packages/Rdio/` or `~/Library/Application Support/Sublime Text 3/Packages/Rdio/` depending on your version of Sublime.
+```bash
+$ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages 
+$ git clone https://github.com/smpanaro/sublime-rdio.git
+```
 
-Usage
------
+If you would like to use the search feature, you need to enter an Rdio API key and secret as described in the [settings](#settings) file. These are easy to obtain, so don't worry.  
+
+## Usage
 Access the command palette with `CMD+Shift+P` and type `Rdio` to select a command.
 
-Commands include:
+### Command Palette
 * Play/Pause
 * Next/Previous
 * Search
 * Shuffle
-* Now Playing
+* Now Playing - Display current track information in the status bar. *Note*: What information is displayed can be tweaked in [settings](#settings).
 
-Settings can be found in `Sublime Text -> Preferences -> Package Settings -> Rdio`. 
+### Search
+![search suggestions](search.gif)  
+Access via the command palette. As you type a search suggestions will appear. Tab through them and hit enter to select one. Simply hit enter to perform a search without them.  
+*Note*:Suggestions can be disabled in the [settings](#settings).  
 
-Todo
-----
-- Search suggestions
-- Fix status display when not playing
+## Settings
+Settings can be found in `Sublime Text -> Preferences -> Package Settings -> Rdio`.  
+Copy the contents of "Settings - Default" into "Settings - User" and edit as much as you want.  
+
+## Acknowlegements
+[rdio-simple](https://github.com/rdio/rdio-simple/tree/master/python) to interact with Rdio web API.  
+
+## Known Issues
+If this plugin launches the Rdio app and the user quits the app before the launch completes (when music starts playing), this plugin will launch the app again.  **FIX**: Wait for the app to fully launch before quitting.
+
+## Bugs/Questions/Comments
+Open an Issue or let me know [@flat](https://www.twitter.com/flat)
