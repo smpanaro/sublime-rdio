@@ -73,6 +73,9 @@ class AppleScriptRdioPlayer():
             position = self.get_position()
         return {"duration":duration, "artist":artist, "album":album, "song":name, "position":position}
 
+    def _get_track_key(self):
+        return self._execute_command('tell application "Rdio" to key of current track')
+
     def get_position(self):
         """ Return current position in seconds. """
         numstr = self._execute_command('tell application "Rdio" to player position')
@@ -93,23 +96,72 @@ class AppleScriptRdioPlayer():
     def play_pause(self):
         self._execute_command('tell application "Rdio" to playpause')
 
-    def play_track(self, track_url, attempts=0):
-        # Wait for the application to launch.
+    def play_album(self, album_key, album_name, attempts=0):
+        """
+        Play the album with Rdio key, album_key, launching the Rdio app if necessary.
+
+        For a more detailed explanation see :py:func`play_track`.
+        """
+        MAX_ATTEMPTS = 50
+        MILLIS_BETWEEN_ATTEMPTS = 1000
+        if attempts > MAX_ATTEMPTS: return
+
         if not self.is_running():
-            if attempts > 10: return
             self._execute_command('tell application "Rdio" to launch')
-            sublime.set_timeout(lambda: self.play_track(track_url, attempts+1), 1000)
+
+        if not self.is_running() or (self.get_album() != album_name):
+            self._execute_command('tell application "Rdio" to play source "{}"'.format(album_key))
+            sublime.set_timeout(lambda: self.play_album(album_key, album_name, attempts+1), MILLIS_BETWEEN_ATTEMPTS)
         else:
-            self._execute_command('tell application "Rdio" to play source "{}"'.format(track_url))
+            self.show_status_message()
+
+    def play_track(self, track_key, attempts=0):
+        """
+        Play the track with Rdio key, track_key, launching the Rdio app if necessary.
+
+        If the Rdio app is not launched, this will attempt to launch it and
+        then will attempt to play track_key repeatedly until the Rdio app plays it
+        or until the maximum number of attempts are exhausted.
+
+        These extra steps are required because telling the Rdio app to play a song
+        when it is not launched will silently fail. Additionally, if the Rdio app
+        has just finished launching it may play the previously playing song instead
+        of the requested one - again silently failing.
+
+        The MAX_ATTEMPTS may seem high, but occasionally the app takes ~40 seconds to launch,
+        at least on my machine. A high number shouldn't have a negative effect unless the app
+        is immediately quit, in which case it may relaunch.
+        """
+        MAX_ATTEMPTS = 50
+        MILLIS_BETWEEN_ATTEMPTS = 1000
+        if attempts > MAX_ATTEMPTS: return
+
+        if not self.is_running():
+            self._execute_command('tell application "Rdio" to launch')
+
+        if not self.is_running() or (self._get_track_key() != track_key):
+            self._execute_command('tell application "Rdio" to play source "{}"'.format(track_key))
+            sublime.set_timeout(lambda: self.play_track(track_key, attempts+1), MILLIS_BETWEEN_ATTEMPTS)
+        else:
             self.show_status_message()
 
     def play(self, attempts=0):
+        """
+        Play the current track, launching the Rdio app if necessary.
+
+        For a more detailed explanation see :py:func`play_track`.
+        """
+        MAX_ATTEMPTS = 50
+        MILLIS_BETWEEN_ATTEMPTS = 1000
+        if attempts > MAX_ATTEMPTS: return
+
         if not self.is_running():
-            if attempts > 10: return
             self._execute_command('tell application "Rdio" to launch')
-            sublime.set_timeout(lambda: self.play(attempts+1), 1000)
-        else:
+
+        if not self.is_running() or not self.is_playing():
             self._execute_command('tell application "Rdio" to play')
+            sublime.set_timeout(lambda: self.play(attempts+1), MILLIS_BETWEEN_ATTEMPTS)
+        else:
             self.show_status_message()
 
     def pause(self):

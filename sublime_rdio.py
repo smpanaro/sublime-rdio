@@ -341,11 +341,11 @@ class RdioSearchCommand(RdioCommand):
             self.search("getAlbumsForArtist", {"artist":key, "count":"20"})
 
     def display_album_options(self, query, key):
-        self.window.show_quick_panel(["Play " + query, "Show tracks on " + query], lambda idx: self.handle_album_selection(idx, key))
+        self.window.show_quick_panel(["Play " + query, "Show tracks on " + query], lambda idx: self.handle_album_selection(idx, key, query))
 
-    def handle_album_selection(self, index, key):
+    def handle_album_selection(self, index, key, album_name):
         if index == 0:
-            self.player.play_track(key)
+            self.player.play_album(key, album_name)
         if index == 1:
             track_thread = ThreadedRdioTrackRequest(key, self)
             track_thread.setDaemon(True)
